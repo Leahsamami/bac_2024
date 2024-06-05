@@ -1,4 +1,3 @@
-# Ex1
 def multiplication(n1, n2):
     if n1 <= n2:
         nbre_addition = n2
@@ -6,14 +5,12 @@ def multiplication(n1, n2):
     else:
         nbre_addition = n1
         n1 = n2
-    if nbre_addition > 0:
-        while nbre_addition > 1:
-            n1 = n1 + n2
-            nbre_addition -= 1
-    elif nbre_addition < 0:
-        while nbre_addition < -1:
-            n1 = n1 + n2
-            nbre_addition += 1
+    while nbre_addition > 1:
+        n1 = n1 + n2
+        nbre_addition -= 1
+    while nbre_addition < 1:
+        n1 = n1 - n2
+        nbre_addition += 1
     return n1
 
 
